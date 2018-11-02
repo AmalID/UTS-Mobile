@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/maindetail"
+    android:layout_marginTop="56dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.maindetail.MainDetailFragment">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/imagefilm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagefilm"
+        android:layout_marginTop="25dp"
+        android:text="Judul"
+        android:textSize="20dp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="99dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@+id/judul"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="25dp" />
+
+    <TextView
+        android:id="@+id/rilis"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/judul"
+        android:layout_marginTop="13dp"
+        android:text="Tanggal rilis" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rilis"
+        android:layout_marginTop="15dp"
+        android:text="Deskripsi film" />
+
+</RelativeLayout>
